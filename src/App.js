@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
 import { QuizContext } from './context/quiz';
+import CategoryChange from './components/CategoryChange';
+import Question from './components/Question';
+import Agreement from './components/Agreement';
+
 import './styles/app.css';
 import './styles/checked.css';
 
-import Question from './components/Question';
-import CategoryChange from './components/CategoryChange';
-
 function App() {
-  const { screenChange } = useContext(QuizContext);
+  const { categoryLanguage, screenChange } = useContext(QuizContext);
 
   return (
     <div>
@@ -16,7 +17,9 @@ function App() {
       </header>
       <main>
         {
-          !screenChange ? <CategoryChange /> : <Question />
+          categoryLanguage === ''
+            ? <CategoryChange />
+            : (!screenChange ? <Agreement /> : <Question />)
         }
       </main>
     </div>

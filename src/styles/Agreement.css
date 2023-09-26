@@ -1,0 +1,40 @@
+.agreement h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 35px;
+  font-size: 28px;
+}
+
+.agreement li {
+  font-size: 14px;
+  width: 500px;
+  margin: 20px;
+}
+
+strong {
+  color: #FF7763;
+}
+
+
+.agreement .interaction {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.agreement .radio {
+  background-color: #ffffff;
+  border: 4px solid #91AB9F;
+  border-radius: 3px;
+  display: flex;
+  width: 455px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.agreement .radio h3 {
+  font-size: 15px;
+  user-select: none;
+}

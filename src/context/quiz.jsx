@@ -6,12 +6,15 @@ export const QuizContext = createContext();
 export function QuizProvider({ children }) {
   const [isChecked, setIsChecked] = useState(false);
   const [screenChange, setscreenChange] = useState(false);
+  const [categoryLanguage, setCategoryLanguage] = useState('');
   const value = useMemo(() => ({
     isChecked,
     setIsChecked,
     screenChange,
     setscreenChange,
-  }), [isChecked, screenChange]);
+    categoryLanguage,
+    setCategoryLanguage,
+  }), [isChecked, screenChange, categoryLanguage]);
 
   return (
     <QuizContext.Provider value={ value }>
