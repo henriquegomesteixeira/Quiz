@@ -3,12 +3,12 @@ import { QuizContext } from './context/quiz';
 import CategoryChange from './components/CategoryChange';
 import Question from './components/Question';
 import Agreement from './components/Agreement';
+import Result from './components/Result';
 
 import './styles/app.css';
-import './styles/checked.css';
 
 function App() {
-  const { categoryLanguage, screenChange } = useContext(QuizContext);
+  const { categoryLanguage, screenChange, screenResult } = useContext(QuizContext);
 
   return (
     <div>
@@ -19,7 +19,8 @@ function App() {
         {
           categoryLanguage === ''
             ? <CategoryChange />
-            : (!screenChange ? <Agreement /> : <Question />)
+            : (!screenChange ? <Agreement />
+              : (!screenResult ? <Question /> : <Result />))
         }
       </main>
     </div>

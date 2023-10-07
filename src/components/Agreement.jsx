@@ -2,16 +2,17 @@ import React, { useContext } from 'react';
 import { QuizContext } from '../context/quiz';
 
 import '../styles/Agreement.css';
+import '../styles/checked.css';
 
-const timeForTheCheckboxToBeMarked = 1000;
+const timeForTheCheckboxToBeMarked = 900;
 
 function Agreement() {
-  const { isChecked, setIsChecked, setscreenChange } = useContext(QuizContext);
+  const { isChecked, setIsChecked, setScreenChange } = useContext(QuizContext);
 
   const handleClick = () => {
     setIsChecked(true);
     setTimeout(() => {
-      setscreenChange(true);
+      setScreenChange(true);
     }, timeForTheCheckboxToBeMarked);
   };
 

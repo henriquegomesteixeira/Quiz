@@ -1,0 +1,73 @@
+.wrong {
+  --clr: #6e0b0b;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: 300ms;
+}
+
+.container input:checked ~ .wrong {
+  background-color: var(--clr);
+  border-radius: .5rem;
+  animation: pulse 500ms ease-in-out;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.wrong:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .wrong:after {
+  display: block;
+}
+
+.container .wrong::before,
+.container .wrong::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 45%;
+  width: 60%;
+  height: 3px;
+  background-color: #E0E0E2;
+  display: none;
+}
+
+.container .wrong::before {
+  transform: rotate(45deg);
+}
+
+.container .wrong::after {
+  transform: rotate(-45deg);
+}
+
+.container input:checked ~ .wrong::before {
+  display: block;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 #6e0b0b90;
+    rotate: 20deg;
+  }
+
+  50% {
+    rotate: -20deg;
+  }
+
+  75% {
+    box-shadow: 0 0 0 10px #6e0b0b60;
+  }
+
+  100% {
+    box-shadow: 0 0 0 13px #6e0b0b30;
+    rotate: 0;
+  }
+}

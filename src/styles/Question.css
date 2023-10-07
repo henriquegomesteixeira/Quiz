@@ -1,0 +1,54 @@
+#questions .options {
+  background-color: #ffffff;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(13, 51, 45, 0.082);
+  width: 500px;
+  transition: background-color 0.3s ease;
+}
+
+#questions .options h3 {
+  font-size: 15px;
+}
+
+#questions #button {
+  display: flex;
+  justify-content: center;
+}
+
+#questions button {
+  background-color: #FF8D7D;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+
+#questions #button h3 {
+  font-size: 15px;
+  color: #0B3B3C;
+}
+
+#questions #button {
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#questions #button:hover {
+  opacity: 0.8;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
