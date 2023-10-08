@@ -1,0 +1,90 @@
+#result {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#result h2 {
+  margin: 0;
+}
+
+#result #button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#result button {
+  padding: 10px;
+  background-color: #FF8D7D;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #0B3B3C;
+  font-size: 15px;
+  height: 40px;
+  width: 240px;
+}
+
+#result button {
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#result button:hover {
+  opacity: 0.8;
+}
+
+#result .mapQuestionAnserKey {
+  border-radius: 5px;
+  background-color: #F8F7F6;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+#result .mapQuestionAnserKey .questionAnserKey {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#result .mapQuestionAnserKey .h3 {
+  margin: 0;
+}
+
+#result .mapQuestionAnserKey .p {
+  margin: 0;
+  margin-left: 35px;
+}
+
+#result .mapQuestionAnserKey .img {
+  width: 18px;
+  height: 18px;
+  margin: 0 15px 0 5px;
+}
+
+#result .mapQuestionAnserKey .img2 {
+  width: 15px;
+  height: 15px;
+  margin: 0 15px 0 5px;
+}
+
+#result .mapQuestionAnserKey .optionsCorrectOrIncorrect {
+  display: flex;
+  align-items: center;
+}
+
+#result .mapQuestionAnserKey .correct {
+  margin-left: 0px;
+  margin: 0;
+}
+
+#result .mapQuestionAnserKey .incorrect {
+  margin-left: 0px;
+  margin: 0;
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+  margin-left: auto;
+}
