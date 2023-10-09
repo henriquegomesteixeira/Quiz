@@ -16,6 +16,7 @@ header {
   display: flex;
   height: 5vh;
   justify-content: center;
+  align-items: center
 }
 
 header h3 {
@@ -25,5 +26,24 @@ header h3 {
   justify-content: center;
   width: 200px;
   border-bottom: 2px solid #0B3B3C;
+}
+
+#headerCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 40px 0 0;
+}
+
+@media screen and (max-width: 750px) {
+  #headerCount {
+    margin: 12px 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #headerCount {
+    display: none;
+  }
 }
 

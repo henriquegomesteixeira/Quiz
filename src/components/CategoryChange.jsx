@@ -4,7 +4,7 @@ import js from '../img/js.png';
 import html from '../img/html.png';
 import css from '../img/css.png';
 
-import '../styles/category.css';
+import '../styles/Category.css';
 
 function CategoryChange() {
   const { setCategoryLanguage } = useContext(QuizContext);

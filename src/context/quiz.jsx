@@ -11,6 +11,7 @@ export function QuizProvider({ children }) {
   const [correctAnswer, setCorrectAnswer] = useState([]);
   const [screenResult, setScreenResult] = useState(false);
   const [dataQuestion, setDataQuestion] = useState();
+  const [counterSwitch, setCounterSwitch] = useState(false);
 
   const value = useMemo(() => ({
     isChecked,
@@ -27,8 +28,11 @@ export function QuizProvider({ children }) {
     setScreenResult,
     dataQuestion,
     setDataQuestion,
+    counterSwitch,
+    setCounterSwitch,
   }), [isChecked, screenChange, categoryLanguage,
-    resultOptions, correctAnswer, screenResult, dataQuestion]);
+    resultOptions, correctAnswer, screenResult, dataQuestion,
+    counterSwitch]);
 
   return (
     <QuizContext.Provider value={ value }>

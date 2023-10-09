@@ -7,12 +7,14 @@ import '../styles/checked.css';
 const timeForTheCheckboxToBeMarked = 900;
 
 function Agreement() {
-  const { isChecked, setIsChecked, setScreenChange } = useContext(QuizContext);
+  const { isChecked, setIsChecked, setScreenChange,
+    setCounterSwitch } = useContext(QuizContext);
 
   const handleClick = () => {
     setIsChecked(true);
     setTimeout(() => {
       setScreenChange(true);
+      setCounterSwitch(true);
     }, timeForTheCheckboxToBeMarked);
   };
 

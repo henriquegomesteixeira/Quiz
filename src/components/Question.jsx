@@ -8,7 +8,7 @@ import '../styles/Options.css';
 function Question() {
   const { categoryLanguage, resultOptions, setResultOptions,
     correctAnswer, setCorrectAnswer, setScreenResult,
-    setDataQuestion } = useContext(QuizContext);
+    setDataQuestion, setCounterSwitch } = useContext(QuizContext);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -39,6 +39,7 @@ function Question() {
     } else {
       setScreenResult(true);
       setDataQuestion(questions);
+      setCounterSwitch(false);
     }
     setResultOptions([...resultOptions, selectedOption]);
     if (selectedOption === answer) {
