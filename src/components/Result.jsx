@@ -55,7 +55,7 @@ function Result() {
 
   return (
     <div>
-      <h1>Quiz de Programação - Resultado</h1>
+      <h1 id="h1">Quiz de Programação - Resultado</h1>
       <div id="result">
         <h2>{percentCorrect.toFixed(2)}%</h2>
         <p>{correctAnswer.length} de {resultOptions.length} correta(s)</p>

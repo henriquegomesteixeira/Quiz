@@ -78,3 +78,33 @@
     rotate: 0;
   }
 }
+
+@media screen and (max-width: 415px) {
+  .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+
+  .container .checkmark:after {
+    left: 0.30em;
+    top: 0.20em;
+    width: 0.12em;
+    height: 0.2em;
+    border-width: 0 0.09em 0.09em 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .checkmark {
+    height: 15px;
+    width: 15px;
+  }
+
+  .container .checkmark:after {
+    left: 0.20em;
+    top: 0.15em;
+    width: 0.12em;
+    height: 0.2em;
+    border-width: 0 0.09em 0.09em 0;
+  }
+}

@@ -24,9 +24,6 @@
   font-size: 15px;
   height: 40px;
   width: 240px;
-}
-
-#result button {
   transition: transform 0.2s, opacity 0.2s;
 }
 
@@ -87,4 +84,183 @@
   width: 15px;
   height: 15px;
   margin-left: auto;
+}
+
+@media screen and (max-width: 605px) {
+  #result #button {
+    width: auto;
+  }
+
+  #result {
+    margin: 0 20px;
+  }
+
+  #result button {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #result button {
+    width: 190px;
+  }
+
+  #result p {
+    font-size: 15px;
+  }
+
+  #h1 {
+    font-size: 25px;
+  }
+  
+  #result .mapQuestionAnserKey .h3 {
+    font-size: 16px;
+  }
+  
+  #result .mapQuestionAnserKey .p {
+    font-size: 12px;
+  }
+  
+  #result .mapQuestionAnserKey .img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  #result .mapQuestionAnserKey .img2 {
+    width: 15px;
+    height: 15px;
+  }
+
+  #result .mapQuestionAnserKey .correct {
+    font-size: 12px;
+  }
+  
+  #result .mapQuestionAnserKey .incorrect {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #result button {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  #result button {
+    width: 160px;
+    font-size: 13px;
+  }
+
+  #result h2 {
+    font-size: 22px;
+  }
+
+  #result p {
+    font-size: 13px;
+  }
+
+  #result .mapQuestionAnserKey .h3 {
+    font-size: 11px;
+  }
+  
+  #result .mapQuestionAnserKey .p {
+    font-size: 9px;
+    margin-left: 32px;
+  }
+  
+  #result .mapQuestionAnserKey .img {
+    width: 12px;
+    height: 12px;
+  }
+  
+  #result .mapQuestionAnserKey .img2 {
+    width: 12px;
+    height: 12px;
+  }
+
+  #result .mapQuestionAnserKey .correct {
+    font-size: 9px;
+  }
+  
+  #result .mapQuestionAnserKey .incorrect {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #result button {
+    width: 150px;
+    font-size: 11px;
+  }
+
+  #result h2 {
+    font-size: 20px;
+  }
+
+  #result p {
+    font-size: 11px;
+  }
+
+  #result .mapQuestionAnserKey .h3 {
+    font-size: 9px;
+  }
+  
+  #result .mapQuestionAnserKey .p {
+    font-size: 7px;
+    margin-left: 30px;
+  }
+  
+  #result .mapQuestionAnserKey .img {
+    width: 10px;
+    height: 10px;
+  }
+  
+  #result .mapQuestionAnserKey .img2 {
+    width: 10px;
+    height: 10px;
+  }
+
+  #result .mapQuestionAnserKey .correct {
+    font-size: 7px;
+  }
+  
+  #result .mapQuestionAnserKey .incorrect {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #result button {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #result button {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #result button {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #result button {
+    width: 100px;
+  }
+
+  #h1 {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #result button {
+    width: 90px;
+    font-size: 10px;
+  }
 }

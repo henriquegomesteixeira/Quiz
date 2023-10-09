@@ -1,5 +1,7 @@
 .CategoryChange {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 h1 {
@@ -35,4 +37,19 @@ h1 {
 .CategoryChange label:hover {
   transform: scale(1.05);
   opacity: 0.8;
+}
+
+@media screen and (max-width: 350px) {
+  .CategoryChange label {
+    width: 220px;
+  }
+
+  .CategoryChange img {
+    height: 60px;
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
 }

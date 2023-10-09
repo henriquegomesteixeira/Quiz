@@ -21,6 +21,9 @@ function Agreement() {
       <h1>Precisamos do seu consentimento</h1>
       <ul>
         <li>
+          Estou ciente que os termos são meramente ilustrativos;
+        </li>
+        <li>
           Estou ciente que esse Quiz é um projeto de{' '}
           Henrique Gomes para fins de aprendizado;
         </li>

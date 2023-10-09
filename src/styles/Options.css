@@ -30,7 +30,7 @@
 }
 
 /* When the checkbox is checked, add a blue background */
-.con input:checked ~ .check {
+.con input:checked~.check {
   background-color: var(--clr);
   border-radius: .5rem;
 }
@@ -43,7 +43,7 @@
 }
 
 /* Show the check when checked */
-.con input:checked ~ .check:after {
+.con input:checked~.check:after {
   display: block;
 }
 
@@ -58,4 +58,38 @@
   height: 0.25em;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1700px) {
+  .check {
+    height: 17px;
+    width: 17px;
+  }
+
+  .con .check:after {
+    left: 0.25em;
+    top: 0.25em;
+    width: 0.20em;
+    height: 0.20em;
+    border-width: 0 0.09em 0.09em 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .check {
+    height: 15px;
+    width: 15px;
+  }
+
+  .con .check:after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0.23em;
+    top: 0.20em;
+    width: 0.20em;
+    height: 0.20em;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
 }
