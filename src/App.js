@@ -17,9 +17,9 @@ function App() {
     case 'html':
       return data[0].questions.length;
     case 'css':
-      return data[1].questions;
+      return data[1].questions.length;
     case 'js':
-      return data[2].questions;
+      return data[2].questions.length;
     default:
       return [];
     }
